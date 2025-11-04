@@ -67,6 +67,7 @@ body{
     max-width: 490px;
     background-color: var(--pink1);
     margin: auto;
+    font-family: century-gothic, sans-serif;
 }
 
 /* Header */
