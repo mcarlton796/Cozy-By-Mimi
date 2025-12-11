@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- <script defer src="scripts.js"></script> -->
+    <script defer src="scripts.js"></script>
     <title>Cozy By Mimi</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="" alt="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#collections">Collections</a></li>
-                <li><a href="#commissions">Comissions</a></li>
-                <li><a href="#shipping">Shipping</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="meet-the-artist">Meet the Artist</a></li>
-            </ul>
-        </nav>
+        <div id="header-container">
+            <a href="index.html"><img src="images/LOGO-flower.png" alt="logo"></a>
+            <h1><a href="index.html">Cozy By Mimi</a></h1>
+            <nav>
+                <div class="container" id="bars" onclick="ShowHide(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul id="Menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#commissions">Comissions</a></li>
+                    <li><a href="#shipping">Shipping</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="meet-the-artist">Meet the Artist</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="collections">
