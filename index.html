@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
+    <script async src="scripts.js"></script>
     <title>Cozy By Mimi</title>
 </head>
 <body>
@@ -18,6 +18,7 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
+                <!-- LINKS DON'T CLOSE NAV, MUST FIX -->
                 <ul id="Menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#collections">Collections</a></li>
@@ -25,7 +26,7 @@
                     <li><a href="#shipping">Shipping</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="meet-the-artist">Meet the Artist</a></li>
+                    <li><a href="#meet-the-artist">Meet the Artist</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +37,10 @@
                 <h2>
                     Current Collection
                 </h2>
-                <img src="images/the-apothecary-diaries.webp" alt="the apothecary diaries banner image">
+                <p>
+                    The Apothecary Diaries
+                </p>
+                <img src="images/apothecary-diaries.jpg" alt="the apothecary diaries banner image">
                 <ul id="items">
                     <li>Phone Charms</li>
                     <li>Plushies</li>
@@ -47,7 +51,7 @@
                 </ul>
                 <div class="order">
                     <p>
-                    ORDER HERE
+                        <a href="#">ORDER HERE</a>
                     </p>
                 </div>
             </div>
@@ -55,20 +59,23 @@
                 <h2>
                     Previous Collections
                 </h2>
-                <p>
-                    COMING SOON
-                </p>
+                <div>
+                    <p>
+                        Coming Soon<span>...</span>
+                    </p>
+                </div>
+                
             </div>
         </section>
         <section id="commissions">
-            <h2>
-                Commissions are:
-            </h2>
             <h3>
-                Open
+                Commissions are:
             </h3>
+            <p id="subheading-comms">
+                Open
+            </p>
             <p>
-                Commissions are open throughout the year and slots are open intermittently based on availability. A certain amount of slots are open each time, and openings are updated through my instagram @cozybymimi or by checking this website.
+                Commissions are open throughout the year and slots are open intermittently based on availability. A certain amount of slots are open each time, and openings are updated through my instagram <a href="https://www.instagram.com/cozybymimi/">@cozybymimi</a> or by checking this website.
             </p>
             <p>
                 Since commissions are personalized and vary in intricacy, their pricing can vary. Submitting the form only opens an inquiry and no payment is expected until agreed upon.
@@ -76,67 +83,125 @@
             <h4>
                 Commissions Form:
             </h4>
-            <table id="commissions-table">
-                <tr>
-                    <th>Item</th>
-                    <th>Starting Price</th>
-                    <th>Item</th>
-                    <th>Starting Price</th>
-                </tr>
-                <tr>
-                    <td>Hippers</td>
-                    <td>$40+</td>
-                    <td>Accessories</td>
-                    <td>$50</td>
-                </tr>
-                <tr>
-                    <td>Phone charms, Keychains</td>
-                    <td>$40+</td>
-                    <td>Plushies</td>
-                    <td>$110</td>
-                </tr>
-                <tr>
-                    <td>Desk Buddies</td>
-                    <td>$100+</td>
-                    <td>Other</td>
-                    <td>TBD</td>
-                </tr>
-            </table>
+            <div id="broken-table">
+                <div class="title1">
+                    <p>
+                        Item
+                    </p>
+                </div>
+                <div class="title1">
+                    <p>
+                        Starting Price
+                    </p>
+                </div>
+                <div class="title2">
+                    <p>
+                        Item
+                    </p>
+                </div>
+                <div class="title2">
+                    <p>
+                        Starting Price
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Hippers
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        $40+
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Phone Charms
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        $40+
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Keychains
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        $40+
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Desk Buddies
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        $100+
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Accessories
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        $50+
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Plushies
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        $110+
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        Other
+                    </p>
+                </div>
+                <div class="entry">
+                    <p>
+                        TBD
+                    </p>
+                </div>
+            </div>
         </section>
         <section id="shipping">
-            <h2>
+            <h3>
                 Shipping
-            </h2>
+            </h3>
             <p>
-                I use USPS for shipping so the following rates are based on USPS shipping rates and availability:
+                <span class="bold">I use USPS for shipping so the following rates are based on USPS shipping rates and availability:</span> All shipping costs are estimated at this point, once a form is submitted the exact shipping cost will be confirmed:
             </p>
-            <p>
-                All shipping costs are estimated at this point, once a form is submitted the exact shipping cost will be confirmed:
-            </p>
-            <p>
+            <p class="bold">
                 Orders will be combined and the lowest shipping rate will be used. If you need a faster service for an additional cost please note so in the order form.
             </p>
-            <table>
-                <tr>
-                    <th>Location</th>
-                    <th>Rate</th>
-                </tr>
-                <tr>
-                    <td>United State</td>
-                    <td>$7</td>
-                </tr>
-                <tr>
-                    <td>Rest Of the World</td>
-                    <td>$15</td>
-                </tr>
-            </table>
+            <div>
+                <p>Location</p>
+                <p>Rate</p>
+                <p>United States</p>
+                <p>$7</p>
+                <p>Rest of the World</p>
+                <p>$15</p>
+            </div>
         </section>
         <section id="faq">
-            <h2>
+            <h3>
                 Frequently Asked Questions
-            </h2>
+            </h3>
             <ul>
                 <li>
+                    <img src="images/LOGO-flower-outline.png" alt="">
                     <p>
                         <span>How do I place an order?</span>
                     </p>
@@ -145,6 +210,7 @@
                     </p>
                 </li>
                 <li>
+                    <img src="images/LOGO-flower-outline.png" alt="">
                     <p>
                         <span>What payment options do you offer?</span>
                     </p>
@@ -153,6 +219,7 @@
                     </p>
                 </li>
                 <li>
+                    <img src="images/LOGO-flower-outline.png" alt="">
                     <p>
                         <span>When is payment expected?</span>
                     </p>
@@ -161,6 +228,7 @@
                     </p>
                 </li>
                 <li>
+                    <img src="images/LOGO-flower-outline.png" alt="">
                     <p>
                         <span>How can I purchase from a different collection?</span>
                     </p>
@@ -169,6 +237,7 @@
                     </p>
                 </li>
                 <li>
+                    <img src="images/LOGO-flower-outline.png" alt="">
                     <p>
                         <span>Where do you ship to?</span>
                     </p>
@@ -177,6 +246,7 @@
                     </p>
                 </li>
                 <li>
+                    <img src="images/LOGO-flower-outline.png" alt="">
                     <p>
                         <span>Do you accept returns?</span>
                     </p>
@@ -187,18 +257,16 @@
             </ul>
         </section>
         <section id="about">
-            <h2>
+            <h3>
                 About
-            </h2>
+            </h3>
+            <p>
+                Cozy by Mimi was born out of the love of creating and using it as a way for me to slow down in the midst of such a chaotic and busy life. I want to spread joy with my little trinkets and I hope that you love each piece as much as I loved creating them. Thank you so much for stopping by!
+            </p>
             <div>
-                <p>
-                    Cozy by Mimi was born out of the love of creating and using it as a way for me to slow down in the midst of such a chaotic and busy life. I want to spread joy with my little trinkets and I hope that you love each piece as much as I loved creating them. Thank you so much for stopping by!
-                </p>
-            </div>
-            <div>
-                <h3>
+                <h4>
                     Clay Items
-                </h3>
+                </h4>
                 <ul>
                     <li>Smaller items like charms and hippers are made with polymer clay, while items like trinket dishes are made with air dry clay.</li>
                     <li>Paints are gouche and acrylic</li>
@@ -207,9 +275,9 @@
                 </ul>
             </div>
             <div>
-                <h3>
+                <h4>
                     Chrochet Items
-                </h3>
+                </h4>
                 <p>
                     <li>Chrochet items are amde out of acrylic yarn, specifically chenile for plushies.</li>
                     <li>Plushies contain polyfill for their filling.</li>
@@ -221,5 +289,8 @@
             <img src="" alt="Large image of artist and CEO with description">
         </section>
     </main>
+    <footer>
+        <p>&copy;Cozy 2025</p>
+    </footer>
 </body>
 </html>
