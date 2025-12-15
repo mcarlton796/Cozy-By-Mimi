@@ -1,15 +1,28 @@
 let de_nav = document.getElementById("bars");
+document.querySelectorAll(".nav-items").forEach(el => el.addEventListener("click", navigation))
+
+de_nav.addEventListener("click", ShowHide);
+// console.log(nav_items);
+
 
 if (window.screen.width < 1024){
     Menu.style.display = "none";
 }
 
-function ShowHide(x){
-    x.classList.toggle("change");
+function ShowHide(){
     var Menu = document.getElementById("Menu");
-    if(Menu.style.display === "none"){
-        Menu.style.display = "block";
-    }else{
+    if(de_nav.classList.contains("change")){
         Menu.style.display = "none";
-  }
+        de_nav.classList.remove("change");
+    }else{
+        Menu.style.display = "block";
+        de_nav.classList.add("change");
+    }
+}
+
+function navigation(){
+    if(de_nav.classList.contains("change")){
+        Menu.style.display = "none";
+        de_nav.classList.remove("change");
+    }
 }

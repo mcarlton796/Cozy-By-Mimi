@@ -503,23 +503,6 @@ footer p{
 }
 
 /******************************* Small change 410px *******************************/
-/* @media screen and (min-width: 410px){
-    header img{
-        width: 80%;
-        max-width: 60px;
-    }
-} */
+@media screen and (min-width: 410px){
 
-/******************************* Small change 450px *******************************/
-/* @media screen and (min-width: 410px){
-    header img{
-        width: 75%;
-    }
 }
-
-/******************************* Small change 500px *******************************/
-/* @media screen and (min-width: 500px){
-    header img{
-        width: 65%;
-    }
-} */
