@@ -502,7 +502,19 @@ footer p{
     font-weight: 600;
 }
 
-/******************************* Small change 410px *******************************/
-@media screen and (min-width: 410px){
+/******************************* Medium change 720px *******************************/
+@media screen and (min-width: 720px){
+    header{
+        height: 70px;
+    }
 
+
+    #header-container{
+        width: 85%;
+        max-width: 590px;
+    }
+
+    main{
+        max-width: 590px;
+    }
 }
