@@ -5,7 +5,7 @@ de_nav.addEventListener("click", ShowHide);
 // console.log(nav_items);
 
 
-if (window.screen.width < 1024){
+if (window.screen.width < 960){
     Menu.style.display = "none";
 }
 

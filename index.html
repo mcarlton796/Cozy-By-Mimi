@@ -11,15 +11,20 @@
 <body>
     <header>
         <div id="header-container">
-            <a href="index.html"><img src="images/LOGO-flower.png" alt="logo"></a>
-            <h1><a href="index.html">Cozy By Mimi</a></h1>
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width:960px)" srcset="images/LOGO-cropped.png">
+                    <img src="images/LOGO-flower.png" alt="logo">
+                </picture>
+            <h1>
+                <a href="index.html">Cozy By Mimi</a>
+            </h1>
             <nav>
                 <div class="container" id="bars">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-                <!-- LINKS DON'T CLOSE NAV, MUST FIX -->
                 <ul id="Menu">
                     <li><a class="nav-items" href="index.html">Home</a></li>
                     <li><a class="nav-items" href="#collections">Collections</a></li>
